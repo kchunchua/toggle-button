@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding:0;
+	font-size:16px;
+}
+.wrap {
+	display:flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+padding:4rem;
+}
+.iphone {
+	display:block;
+	position: relative;
+	max-width: 300px;
+}
+.responsive {
+	width:100%;
+	height: auto;
+	pointer-events: none;
+}
+.box {
+	position: absolute;
+	margin-bottom: 1rem;
+	text-align: center;
+	z-index: 1000;
+}
+.desc {
+	display: flex;
+	flex-direction: column;
+	padding:1rem;
+}
+.line-1 {
+	color: #747d8c;
+	font-size: 1em;
+}
+.line-2{
+	color: #747d8c;
+	font-size: 0.65rem;
+	font-style: italic;
+}
+.make-row {
+
+}
+.btn {
+	cursor: pointer;
+	max-width: 200px;
+}
+.round-btn {
+	background:#fafafa;
+	border-radius: 999px;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	-ms-border-radius: 999px;
+	-o-border-radius: 999px;
+	padding:2rem;
+}
+
+.make-row p {
+	padding-bottom: 2rem;
+	padding-left:10px;
+	padding-right: 10px;
+	color:#a1a1a1;
+	font-size:14px;
+}
+
+/*Lamp*/
+.btn-lamp {
+	width: 230px;
+}
+.disappear {
+	display:none !important;
+
+}
+.on, .off {
+	padding:0;
+	margin:0;
+}
+.on {
+	color:#fff;
+}
+.midnight-blue {
+	background: linear-gradient(45deg, rgba(0,36,115,1) 0%, rgba(0,36,115,1) 100%, rgba(2,0,36,1) 002473%);
+
+
+}
+.white {
+	color:#fff !important;
+}
+
+/* Coffee or Cocktail */
+
+.btn-ampm-wrap {
+	display:flex;
+	width:90%;
+	margin: 0 auto;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.75em !important;
+	color: #747d8c;
+}
+.btn-ampm-wrap div, .btn-ampm-wrap p {
+	padding:0;
+	margin: 0;
+
+}
+.am.active {
+	color:rgb(143, 107, 71)!important;
+}
+
+.pm.active {
+	color:#9c88ff!important;
+}
+
+/* iPhone 5 Focus */
+@media screen and (max-width: 320px) {
+	.wrap {
+		padding:2rem;
+	}
+	.iphone {
+		max-width:200px;
+	}
+	.btn {
+		max-width:150px;
+	}
+	.line-1 {font-size:0.75em;}
+
+}
